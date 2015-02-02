@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   end
 
   namespace :label_maker, path: '' do
-    resources :case_filters, only: :index
+    resources :case_filters, only: [:index, :show]
   end
 end

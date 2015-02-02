@@ -1,1 +1,7 @@
-<%= t('text.models.case_filter.none') %>
+<% if @case_filters.any? %>
+  <ol>
+    <%= render @case_filters %>
+  </ol>
+<% else %>
+  <%= t('text.models.case_filter.none') %>
+<% end %>
