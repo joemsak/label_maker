@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'List case filters' do
   scenario 'No items in the list' do
-    stub_desk_api_entries('[]')
+    allow(LabelMaker::CaseFilter).to receive(:all) { [] }
 
     visit label_maker_case_filters_path
 
@@ -10,17 +10,13 @@ RSpec.feature 'List case filters' do
   end
 
   scenario 'Some items in the list' do
-    stub_desk_api_entries('[{ "id" : "123456", "name" : "My Cases" },
-                            { "id" : "654321", "name" : "Inbox" }]')
+    VCR.use_cassette('visit case filters list') do
+      visit label_maker_case_filters_path
 
-    visit label_maker_case_filters_path
+      expect(page).not_to have_content(I18n.t('text.models.case_filter.none'))
 
-    expect(page).not_to have_content(I18n.t('text.models.case_filter.none'))
-
-    expect(page).to have_link('My Cases',
-                              href: label_maker_case_filter_path('123456'))
-
-    expect(page).to have_link('Inbox',
-                              href: label_maker_case_filter_path('654321'))
+      expect(page).to have_link('My Cases',
+                                href: label_maker_case_filter_path('2275373'))
+    end
   end
 end
