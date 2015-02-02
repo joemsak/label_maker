@@ -14,9 +14,9 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="TtrrzA2kMoHfWnpR8zJZhB0VXIysjQn0nPYAXQPrNk",
-        oauth_signature="vlZOm6gtzLTfJ%2FwhXxUA1FH6zLw%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422915583", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="h0D7gXe5yiNE2H8KNkmuuvsvQn9oGuWGgg5GiDkrl8",
+        oauth_signature="4l%2FqxpOq30LoVgeNl%2B2SBuUYbCQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917605", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -29,7 +29,7 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 22:19:43 GMT
+      - Mon, 02 Feb 2015 22:53:26 GMT
       etag:
       - '"14229147754005782"'
       status:
@@ -43,11 +43,11 @@ http_interactions:
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '59'
+      - '55'
       x-rate-limit-reset:
-      - '17'
+      - '34'
       x-request-id:
-      - c257a9c88ecb0dd0e55ef43b22fba231
+      - 93514fb313d0bcd11f62e390b96f6ade
       content-length:
       - '1794'
       connection:
@@ -61,7 +61,7 @@ http_interactions:
         Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
         Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 22:19:43 GMT
+  recorded_at: Mon, 02 Feb 2015 22:53:26 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/labels
@@ -76,24 +76,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="R20gxlEQ8LfwCcB0dX7QaxAoa89z7pRPY3z50k35vfw",
-        oauth_signature="R8eQPJ1YXCrnRVfAXw9Wa%2BqwreA%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422915583", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="52S9bnQOWi936vn6NIcvKD2QbeUNksqGznjeftRZZY",
+        oauth_signature="3qe2r%2BqRLECwHb6N1pixqX1ipQI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917606", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
+      accept-ranges:
+      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 22:19:44 GMT
+      - Mon, 02 Feb 2015 22:53:26 GMT
       etag:
       - '"14229147754005782"'
-      server:
-      - nginx
       status:
       - 200 OK
       vary:
@@ -102,20 +102,14 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
-      x-rack-cache:
-      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '58'
+      - '54'
       x-rate-limit-reset:
-      - '16'
+      - '34'
       x-request-id:
-      - c9ce36b03258b2d5a1f2323a210b3e77
-      x-runtime:
-      - '0.074012'
-      x-ua-compatible:
-      - IE=Edge,chrome=1
+      - de49f78ac1f1a8ac5df9e17fb11c9191
       content-length:
       - '1794'
       connection:
@@ -129,5 +123,5 @@ http_interactions:
         Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
         Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 22:19:44 GMT
+  recorded_at: Mon, 02 Feb 2015 22:53:26 GMT
 recorded_with: VCR 2.9.3

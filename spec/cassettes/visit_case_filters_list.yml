@@ -14,9 +14,9 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="nR7vkYUSwNokySa5TtvQafG2ANramevF0Eirb6dFA",
-        oauth_signature="eR3NHMQCFKYUzWw2qNYjTWJGIDI%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900763", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="LudWW3mVFtGJ1EBpw1pcX6iycArUlimAxiBoNdqhOM",
+        oauth_signature="9AVWFd901bL%2FvjuC1lvZoib0RsM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917416", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -27,7 +27,7 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:44 GMT
+      - Mon, 02 Feb 2015 22:50:17 GMT
       etag:
       - '"85a00da46ba4f1687d1c5dc721417420"'
       server:
@@ -47,15 +47,15 @@ http_interactions:
       x-rate-limit-remaining:
       - '59'
       x-rate-limit-reset:
-      - '16'
+      - '43'
       x-request-id:
-      - 70c686fbfd7efbb1df3eee1911d1854f
+      - fad722e9257370d05fa3356c5470c7ba
       x-runtime:
-      - '0.118454'
+      - '0.085615'
       x-ua-compatible:
       - IE=Edge,chrome=1
-      content-length:
-      - '3308'
+      transfer-encoding:
+      - chunked
       connection:
       - Close
     body:
@@ -70,7 +70,7 @@ http_interactions:
         Pending Cases (>3 Days)","position":8,"active":false,"routing_enabled":false,"sort_field":"priority","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275378","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275378/cases","class":"case"}}},{"id":2275379,"name":"Outbox","position":13,"active":true,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275379","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275379/cases","class":"case"}}},{"id":2275380,"name":"Deleted
         Cases","position":14,"active":false,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"asc","_links":{"self":{"href":"/api/v2/filters/2275380","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275380/cases","class":"case"}}}]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:44 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:17 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275371/cases
@@ -85,153 +85,9 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="kIMJBsYMjoUbseHBjKYl3kxEF88Kk0Abmgnb4pWPoM",
-        oauth_signature="kNzsjbnAaXQUtPzc4l3tp%2FcxzUQ%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900764", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      accept-ranges:
-      - bytes
-      cache-control:
-      - must-revalidate, private, max-age=0
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Mon, 02 Feb 2015 18:12:44 GMT
-      etag:
-      - '"c70e246683ab882749ef618c12c13284"'
-      status:
-      - 200 OK
-      vary:
-      - X-AppVersion
-      x-appversion:
-      - '15.999'
-      x-frame-options:
-      - SAMEORIGIN
-      x-rate-limit-limit:
-      - '60'
-      x-rate-limit-remaining:
-      - '58'
-      x-rate-limit-reset:
-      - '16'
-      x-request-id:
-      - 244121c66d927ff93f4b71699bc3bbc7
-      content-length:
-      - '5286'
-      connection:
-      - Close
-    body:
-      encoding: UTF-8
-      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275371/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275371/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275371/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
-        We sent you a test case to show what a customer experiences when emailing
-        your new support email address: support@joesak.desk-mail.com. This is your
-        dedicated support email address that you can start using right away without
-        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-01-30T22:56:39Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T05:18:08Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
-        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":null,"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
-        want to personally thank you for signing up to try Desk.com! To ensure you
-        get the most out of your trial, here are some helpful tips and quick ways
-        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
-        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
-        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
-        makes it easy to WOW your customers because it gives you the tools to offer
-        super fast customer support. \n\nHere are 3 features our customers love to
-        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
-        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
-        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
-    http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:44 GMT
-- request:
-    method: get
-    uri: https://joesak.desk.com/api/v2/filters/2275372/cases
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
-      - "*/*"
-      user-agent:
-      - OAuth gem v0.4.7
-      authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="EEsWiuknjK3cy0Qw1QgOlFyOFnSlzpZqvB1iXs",
-        oauth_signature="F77N6cznYkagx7obkQPV34OOphk%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900764", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      accept-ranges:
-      - bytes
-      cache-control:
-      - must-revalidate, private, max-age=0
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Mon, 02 Feb 2015 18:12:45 GMT
-      etag:
-      - '"d78b9e56724846c996eaffe3bb4245a4"'
-      status:
-      - 200 OK
-      vary:
-      - X-AppVersion
-      x-appversion:
-      - '15.999'
-      x-frame-options:
-      - SAMEORIGIN
-      x-rate-limit-limit:
-      - '60'
-      x-rate-limit-remaining:
-      - '57'
-      x-rate-limit-reset:
-      - '15'
-      x-request-id:
-      - 2208ea31ecc399aad977869d13c9aaea
-      content-length:
-      - '5286'
-      connection:
-      - Close
-    body:
-      encoding: UTF-8
-      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275372/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275372/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275372/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
-        We sent you a test case to show what a customer experiences when emailing
-        your new support email address: support@joesak.desk-mail.com. This is your
-        dedicated support email address that you can start using right away without
-        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-01-30T22:56:39Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T05:18:08Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
-        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":null,"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
-        want to personally thank you for signing up to try Desk.com! To ensure you
-        get the most out of your trial, here are some helpful tips and quick ways
-        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
-        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
-        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
-        makes it easy to WOW your customers because it gives you the tools to offer
-        super fast customer support. \n\nHere are 3 features our customers love to
-        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
-        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
-        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
-    http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:45 GMT
-- request:
-    method: get
-    uri: https://joesak.desk.com/api/v2/filters/2275373/cases
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
-      - "*/*"
-      user-agent:
-      - OAuth gem v0.4.7
-      authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="LfJ5MvEHdRPa0h5lDSOvJR8liiyYCLhl4tsHuH6zk",
-        oauth_signature="yNWcpRkFreMxiydsV7wRQ0H2NWI%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900765", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="XADKlf5jPBwmsS8xWcuAIexgp4XrQVqWuh76pJPpS4",
+        oauth_signature="AB4UCtHqn9m0VfrNuAOxMOqkfT0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917417", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -242,9 +98,9 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:46 GMT
+      - Mon, 02 Feb 2015 22:50:18 GMT
       etag:
-      - '"e048dc47e77194864b09140d119b69d3"'
+      - '"a56ae6825b051ce1e42dff8604c3a6a7"'
       server:
       - nginx
       status:
@@ -260,13 +116,13 @@ http_interactions:
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '56'
+      - '58'
       x-rate-limit-reset:
-      - '14'
+      - '42'
       x-request-id:
-      - bf42c8b618cc7b670725af9515007090
+      - 3c63c0af0180a838d2a8a77153fbc4f2
       x-runtime:
-      - '0.076700'
+      - '0.088309'
       x-ua-compatible:
       - IE=Edge,chrome=1
       transfer-encoding:
@@ -275,7 +131,12 @@ http_interactions:
       - Close
     body:
       encoding: UTF-8
-      string: '{"total_entries":2,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275373/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275373/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275373/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":1,"external_id":null,"blurb":"I
+      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275371/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275371/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275371/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@joesak.desk-mail.com. This is your
+        dedicated support email address that you can start using right away without
+        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-02-02T19:13:34Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T19:13:34Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
+        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
         want to personally thank you for signing up to try Desk.com! To ensure you
         get the most out of your trial, here are some helpful tips and quick ways
         to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
@@ -287,7 +148,511 @@ http_interactions:
         that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
         Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:46 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:18 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="t7I5eNUf86dMFSRK6rOt4O535Yp2mOcIje4Qrfbk",
+        oauth_signature="w8PL9jLaiU2jPvV%2BO4w6INeEdFs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917418", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:18 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '57'
+      x-rate-limit-reset:
+      - '42'
+      x-request-id:
+      - 40efc52a5b7f226165596961e76d2b5a
+      x-runtime:
+      - '0.067907'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:18 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="boH325uWBVUS9vU4B7mEZzFmcPf62AjUucRJwkcXQ8",
+        oauth_signature="hZdfVgcA%2FHH3tfnSUMs8e%2B1CmYM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917418", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:19 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '56'
+      x-rate-limit-reset:
+      - '41'
+      x-request-id:
+      - 60814560ceb43b9df01b4a87ce6d6147
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:19 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/filters/2275372/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="c4UnTeGcC7JPSOVnEpvXjzYWcrZP6ECwiSpQUsOVI",
+        oauth_signature="5AoydO6X7ElXCN2iXtIL727jPf0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917419", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:19 GMT
+      etag:
+      - '"bb2411db9a031d7acc7de67a53a6ce72"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '55'
+      x-rate-limit-reset:
+      - '41'
+      x-request-id:
+      - 357664bb6f7b1caa969a9b6bb14501fd
+      content-length:
+      - '5330'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275372/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275372/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275372/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@joesak.desk-mail.com. This is your
+        dedicated support email address that you can start using right away without
+        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-02-02T19:13:34Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T19:13:34Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
+        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
+        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
+        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
+        makes it easy to WOW your customers because it gives you the tools to offer
+        super fast customer support. \n\nHere are 3 features our customers love to
+        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
+        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
+        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:20 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="bV4BfGAye8ygt0UGR7JXgnQ7NYxJvXRDsx6hllejQ",
+        oauth_signature="b6eGd3OfA7GcZIYV9MHAIJo6%2BUk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917420", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:20 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '54'
+      x-rate-limit-reset:
+      - '40'
+      x-request-id:
+      - bebc83f0191f67c89bb6d4c81c1cb4b2
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:20 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="BUQl64w9li4gZ8xE7yS4r4Zr4wmKocooDv9rKqDeMMI",
+        oauth_signature="iteWzARJswIsmyNm52EOoX3m6Go%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917420", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:21 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '53'
+      x-rate-limit-reset:
+      - '39'
+      x-request-id:
+      - 71df8f5606cd4a24696a794c68f0264d
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:21 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/filters/2275373/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="say5StEKU3I4GVFrJIYxh1cdBHxWGf8gvUdyzPvNA8",
+        oauth_signature="Ihdj9bJqIIkzmmt2N49qW2sN4Po%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917421", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:22 GMT
+      etag:
+      - '"406f314fb10ce54e2eaa48b71b81b86f"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '52'
+      x-rate-limit-reset:
+      - '38'
+      x-request-id:
+      - 113b00e2005e150e009b4b6a4ee4c246
+      x-runtime:
+      - '0.112217'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '5330'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275373/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275373/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275373/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@joesak.desk-mail.com. This is your
+        dedicated support email address that you can start using right away without
+        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-02-02T19:13:34Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T19:13:34Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
+        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
+        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
+        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
+        makes it easy to WOW your customers because it gives you the tools to offer
+        super fast customer support. \n\nHere are 3 features our customers love to
+        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
+        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
+        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:22 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="2U8JljtP5tt4XqG7cq2SZm76pcykStqO1CJNaHgU7c",
+        oauth_signature="%2FT8N9QpdZaUmckwdION1UOPfqRM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917422", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:22 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '51'
+      x-rate-limit-reset:
+      - '38'
+      x-request-id:
+      - 93a4f136afda8581ff10bd1dd8f5ae2a
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:22 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="mT3ZXlxqNjgRvyBnG9kaTrQhwxn6Wxzx63qL7BF5xU",
+        oauth_signature="mbitIeQPEO2fKkj%2BHgQ%2B3qLEKh0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917422", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:23 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '50'
+      x-rate-limit-reset:
+      - '37'
+      x-request-id:
+      - d60622c629b5e8d220846c03976c0e20
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:23 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275374/cases
@@ -302,24 +667,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="EPasvTInT3kDOyF5mz3UCZBbKCQezpqdM2OSz3kDE",
-        oauth_signature="paGTzt6lDy9bYy2Pgj9JvHfE%2BOY%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900766", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="WShjhEycpXItfIn0ULjjssaDEMlxE1YnnUnEBJb9Pi4",
+        oauth_signature="5zQ9GEmIblDntTvYIDkN1SGprgY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917423", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
-      accept-ranges:
-      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:47 GMT
+      - Mon, 02 Feb 2015 22:50:24 GMT
       etag:
-      - '"fd79909e0997bd71e9dd27126893cd21"'
+      - '"6e78d052c637e3d85c915cb561804b8f"'
+      server:
+      - nginx
       status:
       - 200 OK
       vary:
@@ -328,28 +693,29 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
+      x-rack-cache:
+      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '55'
+      - '49'
       x-rate-limit-reset:
-      - '13'
+      - '36'
       x-request-id:
-      - 6f19eea047d9db063f2692fd0911c33c
+      - f469e32812d31c797e0abbe1c02b4901
+      x-runtime:
+      - '0.075956'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
       content-length:
-      - '1988'
+      - '341'
       connection:
       - Close
     body:
       encoding: UTF-8
-      string: '{"total_entries":1,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275374/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275374/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275374/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
-        We sent you a test case to show what a customer experiences when emailing
-        your new support email address: support@joesak.desk-mail.com. This is your
-        dedicated support email address that you can start using right away without
-        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-01-30T22:56:39Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T05:18:08Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
-        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":null,"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}}]}}'
+      string: '{"total_entries":0,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275374/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275374/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275374/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:47 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:24 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275375/cases
@@ -364,9 +730,87 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="WJNnTLhRwuafC8HxDUXdDulZWeAAbYcZZDBhJ3IIIs",
-        oauth_signature="yIo2CnosMJ4TI1n07prkS6c81Ts%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900767", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="FySbAu3D86dqHylIwVoLmxSCtsICFInKu6yXcSh8L4",
+        oauth_signature="vs19S91sad3Dqga7JvORhsSC%2Frg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917424", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:24 GMT
+      etag:
+      - '"177ceb9865457f1269bcd6f1ea722735"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '48'
+      x-rate-limit-reset:
+      - '36'
+      x-request-id:
+      - 846ac2c34a5e10c4dc2e383014c509ee
+      x-runtime:
+      - '0.079287'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '5330'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275375/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275375/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275375/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@joesak.desk-mail.com. This is your
+        dedicated support email address that you can start using right away without
+        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-02-02T19:13:34Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T19:13:34Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
+        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
+        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
+        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
+        makes it easy to WOW your customers because it gives you the tools to offer
+        super fast customer support. \n\nHere are 3 features our customers love to
+        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
+        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
+        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:24 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="R7dQGXehwj7vINC9ZG0gjpAL96CkvJhE4lSZhTGXQ",
+        oauth_signature="Y2eZWZD%2BLtAn8HXwA3lJO%2FCah%2B8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917424", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -379,9 +823,9 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:47 GMT
+      - Mon, 02 Feb 2015 22:50:25 GMT
       etag:
-      - '"f14be6ef5c3da28f3f4c542bfe05369f"'
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
       status:
       - 200 OK
       vary:
@@ -393,35 +837,79 @@ http_interactions:
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '54'
+      - '47'
       x-rate-limit-reset:
-      - '13'
+      - '35'
       x-request-id:
-      - 284f808207864842e02d8fa0a2f522bd
+      - 98109e10c499a631b9bb3a8f7307bbb8
       content-length:
-      - '5286'
+      - '181'
       connection:
       - Close
     body:
       encoding: UTF-8
-      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275375/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275375/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275375/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
-        We sent you a test case to show what a customer experiences when emailing
-        your new support email address: support@joesak.desk-mail.com. This is your
-        dedicated support email address that you can start using right away without
-        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-01-30T22:56:39Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T05:18:08Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
-        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":null,"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
-        want to personally thank you for signing up to try Desk.com! To ensure you
-        get the most out of your trial, here are some helpful tips and quick ways
-        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
-        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
-        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
-        makes it easy to WOW your customers because it gives you the tools to offer
-        super fast customer support. \n\nHere are 3 features our customers love to
-        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
-        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
-        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:47 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:25 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="WrpvI9jHtkUTcZMyJ87gYZGL88D94Wc4cF1jOhhgM",
+        oauth_signature="1HC4NJJyAJAaqS2LNGbynWKfbsA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917425", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:26 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '46'
+      x-rate-limit-reset:
+      - '34'
+      x-request-id:
+      - 7242bc4abd3d30170cc1e9ec8cebd9c5
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:26 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275376/cases
@@ -436,9 +924,87 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="Jm8Tn3FnC6ufAuFhHworcuFQ0SMgQO9ePDzE0NYMVw",
-        oauth_signature="J0AU40sXYT8nxIT7FCQZnMEumZ0%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900767", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="dxu1wxT0ZeAWHhcGvHYjXUD2kVslR4V9hxQ8i4Jtc",
+        oauth_signature="tMZDgGbopF2CzpYRSa%2BxVvMV1tc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917426", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:26 GMT
+      etag:
+      - '"a4dd1575a14913517c2f90e6adc255a9"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '45'
+      x-rate-limit-reset:
+      - '34'
+      x-request-id:
+      - 1573e270468e615b4ca3714711685ccb
+      x-runtime:
+      - '0.105668'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '5330'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275376/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275376/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275376/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
+        We sent you a test case to show what a customer experiences when emailing
+        your new support email address: support@joesak.desk-mail.com. This is your
+        dedicated support email address that you can start using right away without
+        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-02-02T19:13:34Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T19:13:34Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
+        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
+        want to personally thank you for signing up to try Desk.com! To ensure you
+        get the most out of your trial, here are some helpful tips and quick ways
+        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
+        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
+        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
+        makes it easy to WOW your customers because it gives you the tools to offer
+        super fast customer support. \n\nHere are 3 features our customers love to
+        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
+        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
+        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:26 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="vTgNwYTHp4XYRF9zDC5PTqqEMvR9PcP7ZkHDiir6KWA",
+        oauth_signature="WzMF39RizHd5MRjzKyFmIb4mJBw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917426", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -451,9 +1017,9 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:48 GMT
+      - Mon, 02 Feb 2015 22:50:27 GMT
       etag:
-      - '"ed065b039d7f259b79a9e87325fac6f7"'
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
       status:
       - 200 OK
       vary:
@@ -465,35 +1031,85 @@ http_interactions:
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '53'
+      - '44'
       x-rate-limit-reset:
-      - '12'
+      - '33'
       x-request-id:
-      - 1c16c13a3e6fa0bab50358ab56de8c7b
+      - adcd1af458c7135b4c5ce3521ad486a1
       content-length:
-      - '5286'
+      - '181'
       connection:
       - Close
     body:
       encoding: UTF-8
-      string: '{"total_entries":3,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275376/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275376/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275376/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":3,"external_id":null,"blurb":"Hooray!
-        We sent you a test case to show what a customer experiences when emailing
-        your new support email address: support@joesak.desk-mail.com. This is your
-        dedicated support email address that you can start using right away without
-        any setup. Just h","priority":4,"locked_until":null,"label_ids":[],"active_at":"2015-02-02T05:00:51Z","changed_at":"2015-01-30T22:56:39Z","created_at":"2015-01-26T23:34:30Z","updated_at":"2015-02-02T05:18:08Z","first_opened_at":"2015-01-30T22:56:39Z","opened_at":"2015-01-30T22:56:39Z","first_resolved_at":null,"resolved_at":null,"status":"open","description":null,"language":null,"received_at":"2015-01-26T23:34:30Z","type":"email","labels":[],"subject":"Your
-        free support email address has been activated.","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/3","class":"case"},"message":{"href":"/api/v2/cases/3/message","class":"email"},"customer":{"href":"/api/v2/customers/289221629","class":"customer"},"labels":{"href":"/api/v2/cases/3/labels","class":"label"},"assigned_user":null,"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/3/history","class":"history"},"case_links":{"href":"/api/v2/cases/3/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/3/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/3/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/3/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/3/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/3/attachments","class":"attachment","count":0}}},{"id":1,"external_id":null,"blurb":"I
-        want to personally thank you for signing up to try Desk.com! To ensure you
-        get the most out of your trial, here are some helpful tips and quick ways
-        to get started:\n\n1. USE IT - You\u2019ve got 14 days to try us out - please
-        do so and tell us what you t","priority":4,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"email","labels":["Sample
-        Case"],"subject":"Getting Started with Your New Account","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/1","class":"case"},"message":{"href":"/api/v2/cases/1/message","class":"email"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/1/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/1/history","class":"history"},"case_links":{"href":"/api/v2/cases/1/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/1/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/1/replies","class":"reply","count":0},"draft":{"href":"/api/v2/cases/1/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/1/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/1/attachments","class":"attachment","count":0}}},{"id":2,"external_id":null,"blurb":"Desk.com
-        makes it easy to WOW your customers because it gives you the tools to offer
-        super fast customer support. \n\nHere are 3 features our customers love to
-        use to make offering support fast and easy:\n\n1. Macros - Quick shortcuts
-        that allow you to d","priority":9,"locked_until":null,"label_ids":[2177272],"active_at":null,"changed_at":"2015-01-26T23:33:47Z","created_at":"2015-01-26T23:33:47Z","updated_at":"2015-01-26T23:33:47Z","first_opened_at":null,"opened_at":null,"first_resolved_at":null,"resolved_at":null,"status":"new","description":null,"language":null,"received_at":"2015-01-26T23:33:47Z","type":"phone","labels":["Sample
-        Case"],"subject":"The Top 3 Features Our Customers Love!","custom_fields":{},"_links":{"self":{"href":"/api/v2/cases/2","class":"case"},"message":{"href":"/api/v2/cases/2/message","class":"phone"},"customer":{"href":"/api/v2/customers/289221444","class":"customer"},"labels":{"href":"/api/v2/cases/2/labels","class":"label"},"assigned_user":{"href":"/api/v2/users/22811841","class":"user"},"assigned_group":{"href":"/api/v2/groups/476762","class":"group"},"locked_by":null,"history":{"href":"/api/v2/cases/2/history","class":"history"},"case_links":{"href":"/api/v2/cases/2/links","class":"case_link"},"macro_preview":{"href":"/api/v2/cases/2/macros/preview","class":"macro_preview"},"replies":{"href":"/api/v2/cases/2/replies","class":"reply","count":1},"draft":{"href":"/api/v2/cases/2/replies/draft","class":"reply"},"notes":{"href":"/api/v2/cases/2/notes","class":"note","count":0},"attachments":{"href":"/api/v2/cases/2/attachments","class":"attachment","count":0}}}]}}'
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:48 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:27 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177272
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="kXH7Qb2gUd2Ap1doWY2FXbUEsSvyisAqnUQDxeU4k",
+        oauth_signature="gyXGLwHtIiPW5kLaQ5feTe2LkRo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917427", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:50:28 GMT
+      etag:
+      - '"94676aa8c0a5af3d149fb492b36028f8"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '43'
+      x-rate-limit-reset:
+      - '32'
+      x-request-id:
+      - e165f1023c45af3d3f95bb790ce48e70
+      x-runtime:
+      - '0.081910'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '181'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177272,"name":"Sample Case","types":["case"],"description":"Sample
+        Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:50:28 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275377/cases
@@ -508,24 +1124,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="VyctUWMMt4Dut7HPksARiuGJB8KPAnd7LdLviMi4o",
-        oauth_signature="BzZkyshjRvocLBhauY2rzn3%2BizQ%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900768", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="Asf5TASB2tyHkofxE6A3Ow1bM9jgYDLCxOh9HWtEMgg",
+        oauth_signature="O3hxInoneeon3Wj%2FCpNuX5v6R%2B0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917428", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
-      accept-ranges:
-      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:49 GMT
+      - Mon, 02 Feb 2015 22:50:28 GMT
       etag:
       - '"959978bc7362fc5aa5506159e0f49723"'
+      server:
+      - nginx
       status:
       - 200 OK
       vary:
@@ -534,14 +1150,20 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
+      x-rack-cache:
+      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '52'
+      - '42'
       x-rate-limit-reset:
-      - '11'
+      - '32'
       x-request-id:
-      - 78482d68f98a3ab3280686a98ec08ac2
+      - f16f69041344da921bd6c17450778cd9
+      x-runtime:
+      - '0.084008'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
       content-length:
       - '341'
       connection:
@@ -550,7 +1172,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"total_entries":0,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275377/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275377/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275377/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:49 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:28 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275378/cases
@@ -565,24 +1187,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="ox14frHB0j9DUMhLB3GKSm0Uztg8wCX8RYMvYqoCzg",
-        oauth_signature="TIUqE4DMmJ0nlOOChuJvaOAOXOE%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900769", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="u9zpMo0k36AiSMVGbjqi9ZLZnmZMdsOMTA37WjY94",
+        oauth_signature="jeErHAQKZvWgrRU0FuNtL7YpJvg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917428", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
-      accept-ranges:
-      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:50 GMT
+      - Mon, 02 Feb 2015 22:50:29 GMT
       etag:
       - '"e0f10b39de903720ca007b1c39aeb3bb"'
+      server:
+      - nginx
       status:
       - 200 OK
       vary:
@@ -591,14 +1213,20 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
+      x-rack-cache:
+      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '51'
+      - '41'
       x-rate-limit-reset:
-      - '10'
+      - '31'
       x-request-id:
-      - 1ccffdfae5d5a125dc360fadf7e0512d
+      - 8e103e06e6b75aab1e49c4050ceaae8c
+      x-runtime:
+      - '0.057372'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
       content-length:
       - '341'
       connection:
@@ -607,7 +1235,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"total_entries":0,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275378/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275378/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275378/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:50 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:29 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275379/cases
@@ -622,24 +1250,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="EHLeKoVLqodHxbcenOKODjeCBrDb09h9rIQW9wcfuqM",
-        oauth_signature="bteughLWEAhLq3iE7meaTwI%2FAFY%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900770", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="83nSZJ7tOfuCLATOuuJ9XZSL9mxKW0r4fR6pGyHUFA",
+        oauth_signature="lBbWmm99NxDfU4zLN7n9uMMcikc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917429", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
-      accept-ranges:
-      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:50 GMT
+      - Mon, 02 Feb 2015 22:50:30 GMT
       etag:
       - '"2fd466af691547655f9bcdf7bd4f1820"'
+      server:
+      - nginx
       status:
       - 200 OK
       vary:
@@ -648,14 +1276,20 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
+      x-rack-cache:
+      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '50'
+      - '40'
       x-rate-limit-reset:
-      - '10'
+      - '30'
       x-request-id:
-      - 6c51477301a7ce180cc23a5e668b0885
+      - 591f9e0323ee87492a8be8edd83d8789
+      x-runtime:
+      - '0.100133'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
       content-length:
       - '341'
       connection:
@@ -664,7 +1298,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"total_entries":0,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275379/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275379/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275379/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:50 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:30 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/filters/2275380/cases
@@ -679,24 +1313,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="CE4peJ0bylakxijhT1PbBbPGxbd3fk4ZqA5fUsPndk",
-        oauth_signature="r3LBuB7Cu0ZvNp08CBYtPCZpBZU%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422900770", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="iGLxMjbpCOcuaLL123Ynh6xCxO8oiI0arFOmcwmW8k",
+        oauth_signature="ZojRcoyqM5tASRm7ah0SSfueBpE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917430", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
-      accept-ranges:
-      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 18:12:51 GMT
+      - Mon, 02 Feb 2015 22:50:30 GMT
       etag:
       - '"9fa10114fb43d3d03ef59a380c291d20"'
+      server:
+      - nginx
       status:
       - 200 OK
       vary:
@@ -705,14 +1339,20 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
+      x-rack-cache:
+      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '49'
+      - '39'
       x-rate-limit-reset:
-      - '9'
+      - '30'
       x-request-id:
-      - c7a788155f695d9e61aae1adb15ed054
+      - c633612539b941124f2cff06d8e801fa
+      x-runtime:
+      - '0.070358'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
       content-length:
       - '341'
       connection:
@@ -721,5 +1361,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"total_entries":0,"page":1,"_links":{"self":{"href":"/api/v2/filters/2275380/cases?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters/2275380/cases?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters/2275380/cases?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 18:12:51 GMT
+  recorded_at: Mon, 02 Feb 2015 22:50:30 GMT
 recorded_with: VCR 2.9.3

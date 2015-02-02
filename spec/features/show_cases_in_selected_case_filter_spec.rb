@@ -20,7 +20,10 @@ RSpec.describe 'Show cases of a selected filter' do
     @case_filter.cases.each do |desk_case|
       expect(page).to have_content(desk_case.subject)
       expect(page).to have_content(desk_case.blurb)
-      expect(page).to have_content(*desk_case.labels)
+
+      desk_case.labels.each do |label|
+        expect(page).to have_css(".label.#{label.color}", text: label.name)
+      end
     end
   end
 end

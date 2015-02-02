@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels/2177275
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="bTf1vjUNBQnnC6z5ZHGJJPGROJ4idpxjuQS5VZ4LEZk",
+        oauth_signature="uilgwceVODsTJaVTPEPgMTzbwxE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422917351", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:49:12 GMT
+      etag:
+      - '"7dc558b2ad0e5a1f1efb4ea3c048bb10"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '48'
+      x-request-id:
+      - 91cbd3a878dc6bf33866ee34502a9a40
+      x-runtime:
+      - '0.065690'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '197'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2177275,"name":"Abandoned Chats","types":["case","macro"],"description":"Abandoned
+        Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:49:12 GMT
+recorded_with: VCR 2.9.3

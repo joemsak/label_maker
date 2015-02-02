@@ -10,5 +10,9 @@ module LabelMaker
     def self.build(filter_id)
       map_remote("/filters/#{filter_id}/cases")
     end
+
+    def labels=(labels)
+      @labels = label_ids.map { |i| Label.find(i) }
+    end
   end
 end

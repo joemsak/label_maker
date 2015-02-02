@@ -7,5 +7,16 @@ module LabelMaker
     def self.list_endpoint
       '/labels'
     end
+
+    def self.find(id)
+      label = get_http("/labels/#{id}")
+      if persisted?(label)
+        new(label)
+      else
+        raise LabelNotFoundError
+      end
+    end
   end
+
+  class LabelNotFoundError < StandardError; end
 end
