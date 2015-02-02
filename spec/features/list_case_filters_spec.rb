@@ -2,14 +2,21 @@ require 'rails_helper'
 
 RSpec.feature 'List case filters' do
   scenario 'No items in the list' do
+    allow(LabelMaker::Http).to receive(:get) {
+      JSON.parse('{"_embedded" : { "entries" : [] } }')
+    }
+
     visit label_maker_case_filters_path
+
     expect(page).to have_content(I18n.t('text.models.case_filter.none'))
   end
 
   scenario 'Some items in the list' do
-    allow(LabelMaker::CaseFilter).to receive(:all) {
-      [LabelMaker::CaseFilter.new(id: 123456, name: 'My Cases'),
-       LabelMaker::CaseFilter.new(id: 654321, name: 'Inbox')]
+    allow(LabelMaker::Http).to receive(:get) {
+      JSON.parse('{"_embedded" : { "entries" : [
+                    { "id" : "123456", "name" : "My Cases" },
+                    { "id" : "654321", "name" : "Inbox" }
+                  ] } }')
     }
 
     visit label_maker_case_filters_path
