@@ -3,7 +3,7 @@
 The hosted site uses my Desk.com API information
 
 ```
-open http://labelmaker.joesak.com
+open [http://labelmaker.joesak.com](http://labelmaker.joesak.com "Joe Sak's LabelMaker on Heroku")
 ```
 
 # Installation
