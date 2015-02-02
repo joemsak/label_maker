@@ -6,14 +6,12 @@ module LabelMaker
       :sort_direction, :_links
 
     def self.all
-      filters_resp = Http.get('/filters')
-      filters_resp['_embedded']['entries'].map { |f| new(f) }
+      get_filters['_embedded']['entries'].map { |f| new(f) }
     end
 
     def self.find(id)
-      filter_resp = Http.get("/filters/#{id}")
-      if filter_resp.respond_to?(:[]) && filter_resp['id']
-        new(filter_resp)
+      if (filter = get_filter(id)) && persisted?(filter)
+        new(filter)
       else
         raise CaseFilterNotFoundError
       end
@@ -21,6 +19,20 @@ module LabelMaker
 
     def to_param
       id.to_s
+    end
+
+    private
+    def self.get_filter(id)
+      get_filters(id)
+    end
+
+    def self.get_filters(id = nil)
+      suffix = id ? "/#{id}" : ''
+      Http.get("/filters#{suffix}")
+    end
+
+    def self.persisted?(hashie_data)
+      hashie_data.respond_to?(:[]) && hashie_data['id']
     end
   end
 
