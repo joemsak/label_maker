@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/filters/invalidId
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="kfM0KYRgo0hlCCkLYNdkXLZFA8a4vbjJvwYQKK68",
+        oauth_signature="WDqpLfwegtZutx1JVtLsvLQ5mQg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422901036", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - no-cache, private
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 18:17:17 GMT
+      status:
+      - 404 Not Found
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '43'
+      x-request-id:
+      - 6235d260ba7030e7f0173aa89c1e625c
+      content-length:
+      - '32'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"message":"Resource Not Found"}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 18:17:17 GMT
+recorded_with: VCR 2.9.3

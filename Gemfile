@@ -32,6 +32,8 @@ group :test do
   gem 'capybara-webkit', '~> 1.2'
   gem 'factory_girl_rails', '~> 4.4'
   gem 'spring-commands-rspec', '~> 1.0'
+  gem 'fakeweb'
+  gem 'vcr'
 end
 
 group :test, :development do
