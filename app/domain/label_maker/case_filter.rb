@@ -10,7 +10,8 @@ module LabelMaker
     end
 
     def self.find(id)
-      if (filter = get_filter(id)) && persisted?(filter)
+      filter = get_filter(id)
+      if persisted?(filter)
         new(filter)
       else
         raise CaseFilterNotFoundError
