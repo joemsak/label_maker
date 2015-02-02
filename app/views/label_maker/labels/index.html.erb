@@ -1,5 +1,8 @@
-<% if @labels.any? %>
-  <%= render @labels %>
-<% else %>
-  <%= t('text.models.label.none') %>
-<% end %>
+<div class="columns large-12">
+  <h3><%= t('text.models.label.heading') %></h3>
+  <% if @labels.any? %>
+    <%= render @labels %>
+  <% else %>
+    <p><%= t('text.models.label.none') %></p>
+  <% end %>
+</div>

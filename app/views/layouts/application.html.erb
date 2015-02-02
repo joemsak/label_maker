@@ -13,8 +13,17 @@
   </head>
 
   <body>
+    <header class='row'>
+      <nav id='main_nav' class='columns large-12'>
+        <%= link_to t('links.controllers.case_filters.index'),
+                    label_maker_case_filters_path %> |
+        <%= link_to t('links.controllers.labels.index'),
+                    label_maker_labels_path %>
+      </nav>
+    </header>
 
-    <%= yield %>
-
+    <section class='row'>
+      <%= yield %>
+    </section>
   </body>
 </html>

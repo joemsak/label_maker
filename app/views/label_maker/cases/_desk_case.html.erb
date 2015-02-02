@@ -1,9 +1,9 @@
-<%= div_for desk_case, class: 'row' do %>
-  <h1><%= desk_case.subject %></h1>
-  <p>
-    <%= desk_case.blurb %>&hellip;
-    <% desk_case.labels.each do |label| %>
-      <%= content_tag :i, label, class: 'label radius' %>
-    <% end %>
-  </p>
+<%= div_for desk_case, class: 'panel radius' do %>
+  <h4><%= desk_case.subject %></h4>
+
+  <p><%= desk_case.blurb %>&hellip;</p>
+
+  <div class='clearfix'>
+    <%= render desk_case.labels %>
+  </div>
 <% end %>

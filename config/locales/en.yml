@@ -1,9 +1,17 @@
 en:
+  links:
+    controllers:
+      case_filters:
+        index: 'Case Filters'
+      labels:
+        index: 'Labels'
   text:
     models:
       case:
         none: "There are no cases in this filter."
       case_filter:
+        heading: 'Case Filters'
         none: "You don't have any case filters available right now."
       label:
+        heading: 'Labels'
         none: "There are no labels in your Desk.com account."

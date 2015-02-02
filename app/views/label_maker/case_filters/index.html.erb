@@ -1,7 +1,10 @@
-<% if @case_filters.any? %>
-  <ol>
-    <%= render @case_filters %>
-  </ol>
-<% else %>
-  <%= t('text.models.case_filter.none') %>
-<% end %>
+<div class="columns large-12">
+  <h3><%= t('text.models.case_filter.heading') %></h3>
+  <% if @case_filters.any? %>
+    <ol>
+      <%= render @case_filters %>
+    </ol>
+  <% else %>
+    <p><%= t('text.models.case_filter.none') %></p>
+  <% end %>
+</div>
