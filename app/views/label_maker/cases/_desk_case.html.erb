@@ -1,3 +1,9 @@
-<%= div_for desk_case do %>
-  <%= desk_case.blurb %>
+<%= div_for desk_case, class: 'row' do %>
+  <h1><%= desk_case.subject %></h1>
+  <p>
+    <%= desk_case.blurb %>&hellip;
+    <% desk_case.labels.each do |label| %>
+      <%= content_tag :i, label, class: 'label radius' %>
+    <% end %>
+  </p>
 <% end %>
