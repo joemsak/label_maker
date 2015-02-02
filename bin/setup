@@ -24,6 +24,28 @@ Dir.chdir APP_ROOT do
   system "rm -f log/*"
   system "rm -rf tmp/cache"
 
-  puts "\n== Restarting application server =="
-  system "touch tmp/restart.txt"
+  puts "\n== Setting up environment =="
+
+  puts "Your Desk.com subdomain:"
+  desk_name = gets.chomp
+
+  puts "Your Desk.com consumer key:"
+  desk_key = gets.chomp
+
+  puts "Your Desk.com consumer secret:"
+  desk_secret = gets.chomp
+
+  puts "Your Desk.com access token:"
+  desk_token = gets.chomp
+
+  puts "Your Desk.com access token secret:"
+  desk_token_secret = gets.chomp
+
+  File.open('.env', 'w+') do |f|
+    f.write("DESK_NAME=#{desk_name}\n")
+    f.write("DESK_API_CONSUMER_KEY=#{desk_key}\n")
+    f.write("DESK_API_CONSUMER_SECRET=#{desk_secret}\n")
+    f.write("DESK_ACCESS_TOKEN=#{desk_token}\n")
+    f.write("DESK_ACCESS_TOKEN_SECRET=#{desk_token_secret}")
+  end
 end
