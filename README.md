@@ -1,9 +1,9 @@
-# Use
+# Usage
 
 The hosted site uses my Desk.com API information
 
 ```
-open http://label_maker.joesak.com
+open http://labelmaker.joesak.com
 ```
 
 # Installation
