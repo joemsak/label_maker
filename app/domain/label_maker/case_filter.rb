@@ -3,7 +3,7 @@ module LabelMaker
     include ActiveModel::Model
 
     attr_accessor :id, :name, :position, :active, :routing_enabled, :sort_field,
-      :sort_direction, :_links
+      :sort_direction, :cases
 
     def self.all
       get_filters['_embedded']['entries'].map { |f| new(f) }
@@ -20,6 +20,10 @@ module LabelMaker
 
     def to_param
       id.to_s
+    end
+
+    def _links=(links)
+      self.cases = Case.build(id)
     end
 
     private

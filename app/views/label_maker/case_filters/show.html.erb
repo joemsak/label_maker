@@ -1,0 +1,5 @@
+<% if @case_filter.cases.any? %>
+  <%= render partial: 'label_maker/cases/desk_case', collection: @case_filter.cases %>
+<% else %>
+  <%= t('text.models.case.none') %>
+<% end %>
