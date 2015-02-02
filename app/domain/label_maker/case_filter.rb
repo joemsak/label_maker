@@ -1,16 +1,16 @@
 module LabelMaker
-  class CaseFilter
+  class CaseFilter < RemoteResource
     include ActiveModel::Model
 
-    attr_accessor :id, :name, :position, :active, :routing_enabled, :sort_field,
+    attr_accessor :name, :position, :active, :routing_enabled, :sort_field,
       :sort_direction, :cases
 
-    def self.all
-      get_filters['_embedded']['entries'].map { |f| new(f) }
+    def self.list_endpoint
+      '/filters'
     end
 
     def self.find(id)
-      filter = get_filter(id)
+      filter = get_http("/filters/#{id}")
       if persisted?(filter)
         new(filter)
       else
@@ -24,20 +24,6 @@ module LabelMaker
 
     def _links=(links)
       self.cases = Case.build(id)
-    end
-
-    private
-    def self.get_filter(id)
-      get_filters(id)
-    end
-
-    def self.get_filters(id = nil)
-      suffix = id ? "/#{id}" : ''
-      Http.get("/filters#{suffix}")
-    end
-
-    def self.persisted?(hashie_data)
-      hashie_data.respond_to?(:[]) && hashie_data['id']
     end
   end
 
