@@ -1,6 +1,7 @@
 ruby '2.2.0'
 #ruby-gemset=label_maker
 source 'https://rubygems.org'
+
 gem 'rails', '4.2.0'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
@@ -17,10 +18,11 @@ group :development, :test do
   gem 'spring'
 end
 
-
+gem 'oauth'
 gem 'underscore-rails', '~> 1.7'
 gem 'foundation-rails', '~> 5.3'
 gem 'friendly_id', '~> 5.0'
+
 group :test do
   gem 'pry-rails', '~> 0.3'
   gem 'pry-nav', '~> 0.2'
