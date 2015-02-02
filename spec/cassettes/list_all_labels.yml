@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="TtrrzA2kMoHfWnpR8zJZhB0VXIysjQn0nPYAXQPrNk",
+        oauth_signature="vlZOm6gtzLTfJ%2FwhXxUA1FH6zLw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422915583", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:19:43 GMT
+      etag:
+      - '"14229147754005782"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '17'
+      x-request-id:
+      - c257a9c88ecb0dd0e55ef43b22fba231
+      content-length:
+      - '1794'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":8,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
+        Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2177270,"name":"More
+        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2177273,"name":"Negative
+        Feedback","types":["case","macro"],"description":"Negative Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177273","class":"label"}}},{"id":2177272,"name":"Sample
+        Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
+        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:19:43 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="R20gxlEQ8LfwCcB0dX7QaxAoa89z7pRPY3z50k35vfw",
+        oauth_signature="R8eQPJ1YXCrnRVfAXw9Wa%2BqwreA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422915583", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 22:19:44 GMT
+      etag:
+      - '"14229147754005782"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - miss
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '58'
+      x-rate-limit-reset:
+      - '16'
+      x-request-id:
+      - c9ce36b03258b2d5a1f2323a210b3e77
+      x-runtime:
+      - '0.074012'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '1794'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":8,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
+        Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2177270,"name":"More
+        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2177273,"name":"Negative
+        Feedback","types":["case","macro"],"description":"Negative Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177273","class":"label"}}},{"id":2177272,"name":"Sample
+        Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
+        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 22:19:44 GMT
+recorded_with: VCR 2.9.3

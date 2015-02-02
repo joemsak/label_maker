@@ -5,3 +5,5 @@ en:
         none: "There are no cases in this filter."
       case_filter:
         none: "You don't have any case filters available right now."
+      label:
+        none: "There are no labels in your Desk.com account."
