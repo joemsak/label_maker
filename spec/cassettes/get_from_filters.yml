@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="LGKMVvo4tBBpYxe3or8jPH76h0U9QHXFBOKfW4e4",
+        oauth_signature="NJgv4WCT5NpnjcRfVqAbRqHgkOY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422919467", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 23:24:28 GMT
+      etag:
+      - '"85a00da46ba4f1687d1c5dc721417420"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '32'
+      x-request-id:
+      - 7d37760e5c483c7ecee1f229bfb3c093
+      content-length:
+      - '3308'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":10,"page":1,"_links":{"self":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2275371,"name":"Inbox","position":1,"active":true,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275371","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275371/cases","class":"case"}}},{"id":2275372,"name":"All
+        Cases","position":2,"active":true,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275372","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275372/cases","class":"case"}}},{"id":2275373,"name":"My
+        Cases","position":3,"active":true,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275373","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275373/cases","class":"case"}}},{"id":2275374,"name":"Unassigned
+        Cases","position":4,"active":true,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275374","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275374/cases","class":"case"}}},{"id":2275375,"name":"My
+        Group''s Unresolved Cases","position":5,"active":false,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275375","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275375/cases","class":"case"}}},{"id":2275376,"name":"All
+        Unresolved Cases","position":6,"active":false,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275376","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275376/cases","class":"case"}}},{"id":2275377,"name":"Recently
+        Updated Cases","position":7,"active":false,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275377","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275377/cases","class":"case"}}},{"id":2275378,"name":"Aging
+        Pending Cases (>3 Days)","position":8,"active":false,"routing_enabled":false,"sort_field":"priority","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275378","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275378/cases","class":"case"}}},{"id":2275379,"name":"Outbox","position":13,"active":true,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"desc","_links":{"self":{"href":"/api/v2/filters/2275379","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275379/cases","class":"case"}}},{"id":2275380,"name":"Deleted
+        Cases","position":14,"active":false,"routing_enabled":false,"sort_field":"updated_at","sort_direction":"asc","_links":{"self":{"href":"/api/v2/filters/2275380","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2275380/cases","class":"case"}}}]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 23:24:28 GMT
+recorded_with: VCR 2.9.3

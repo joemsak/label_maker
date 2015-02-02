@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://joesak.desk.com/api/v2/labels
+    body:
+      encoding: UTF-8
+      string: '{"name":"Cool Label"}'
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      content-length:
+      - '21'
+      authorization:
+      - OAuth oauth_body_hash="i42%2FweniL9M7o%2ByI1T37DjXRfQo%3D", oauth_consumer_key="1ILS6AktlB2RM1FyvEgw",
+        oauth_nonce="jkCxzm1VOLFTr21E1GVjSYXxB6PZDRSreuHiYKgqCg", oauth_signature="h%2F5TfUtdDM0aWi2Cinbp6sS6m%2FU%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1422919490", oauth_token="KDv8P7iJ7nyGCud1rihM",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 23:24:51 GMT
+      etag:
+      - '"14229194914645114"'
+      location:
+      - https://joesak.desk.com/api/v2/labels/2367525
+      status:
+      - 201 Created
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '56'
+      x-rate-limit-reset:
+      - '9'
+      x-request-id:
+      - e9754b465a57c935e25bb35e142e0dad
+      content-length:
+      - '179'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2367525,"name":"Cool Label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367525","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 23:24:51 GMT
+recorded_with: VCR 2.9.3

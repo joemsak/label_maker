@@ -1,0 +1,14 @@
+<div class='columns large-12'>
+  <h3><%= t('text.controllers.labels.new') %></h3>
+
+  <%= form_for @label do |f| %>
+    <div class='field'>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class='actions'>
+      <%= f.submit t('forms.buttons.submit'), class: 'button' %>
+    </div>
+  <% end %>
+</div>

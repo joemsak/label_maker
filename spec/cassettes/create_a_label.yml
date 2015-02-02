@@ -14,9 +14,9 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="jny7oqMX6vOa3CU9j6anP69cZZeoMZm3qn926QWcFTI",
-        oauth_signature="i8DMTOvPRS8D4nPE1V1vL6ezAfw%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422919501", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="hfFrKjwwrynOVAaOxcDyLOY1zA2NJOnqSOpEm5Og",
+        oauth_signature="BO4pGhE3dQbdwC1K9%2BNJGeYa%2BHM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422919763", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -29,7 +29,7 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 23:25:02 GMT
+      - Mon, 02 Feb 2015 23:29:24 GMT
       etag:
       - '"14229194914645114"'
       status:
@@ -45,9 +45,9 @@ http_interactions:
       x-rate-limit-remaining:
       - '59'
       x-rate-limit-reset:
-      - '58'
+      - '36'
       x-request-id:
-      - 95e673826c2566efbfc502d4aa9e7d34
+      - 52608d747faac2355f452cbab75d3c79
       content-length:
       - '2331'
       connection:
@@ -63,7 +63,67 @@ http_interactions:
         Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
         Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 23:25:02 GMT
+  recorded_at: Mon, 02 Feb 2015 23:29:24 GMT
+- request:
+    method: post
+    uri: https://joesak.desk.com/api/v2/labels
+    body:
+      encoding: UTF-8
+      string: '{"name":"My new label"}'
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      content-length:
+      - '23'
+      authorization:
+      - OAuth oauth_body_hash="XSmO6pJgUWRlzm3FhlwEOWeiRWw%3D", oauth_consumer_key="1ILS6AktlB2RM1FyvEgw",
+        oauth_nonce="ypEk4Ny7fnuhoGfkroIFLiSxOZN0yxbAiz5Ztjl1o8", oauth_signature="BL8m11DXsP3XeVssYu7OT04DrWU%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1422919764", oauth_token="KDv8P7iJ7nyGCud1rihM",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 23:29:24 GMT
+      etag:
+      - '"14229194914645114"'
+      status:
+      - 422 Unprocessable Entity
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '58'
+      x-rate-limit-reset:
+      - '36'
+      x-request-id:
+      - 5e128cd00abcf7cb0465a9352334b6f7
+      content-length:
+      - '59'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"message":"Validation Failed","errors":{"name":["taken"]}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 23:29:24 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/labels
@@ -78,24 +138,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="XaDxgQAPeAX7EtmPmvS3XYAhz0TSmYyRAbeddaLo0U",
-        oauth_signature="BxvFoZgM7yjMnTYn%2FG95blrP6rg%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422919502", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="yINBUlCXHfejen5RNr2OEY4TdXYlHSceM9LWcsgs",
+        oauth_signature="D4fAKhoEsU%2B7TwkubBYDgvhyVNI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422919764", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
+      accept-ranges:
+      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 23:25:03 GMT
+      - Mon, 02 Feb 2015 23:29:25 GMT
       etag:
       - '"14229194914645114"'
-      server:
-      - nginx
       status:
       - 200 OK
       vary:
@@ -104,22 +164,16 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
-      x-rack-cache:
-      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '58'
-      x-rate-limit-reset:
       - '57'
+      x-rate-limit-reset:
+      - '35'
       x-request-id:
-      - bda6e43edf279da40d5d05cb36bd0d87
-      x-runtime:
-      - '0.095101'
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      transfer-encoding:
-      - chunked
+      - 0bd01cb0c19521ca0af25b15105ce121
+      content-length:
+      - '2331'
       connection:
       - Close
     body:
@@ -133,5 +187,5 @@ http_interactions:
         Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
         Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 23:25:03 GMT
+  recorded_at: Mon, 02 Feb 2015 23:29:25 GMT
 recorded_with: VCR 2.9.3

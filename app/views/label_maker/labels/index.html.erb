@@ -5,4 +5,8 @@
   <% else %>
     <p><%= t('text.models.label.none') %></p>
   <% end %>
+
+  <%= link_to t('links.controllers.labels.new'),
+              new_label_maker_label_path,
+              class: 'button'%>
 </div>

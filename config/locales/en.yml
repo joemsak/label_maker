@@ -1,17 +1,27 @@
 en:
+  forms:
+    buttons:
+      submit: 'Save'
   links:
     controllers:
       case_filters:
         index: 'Case Filters'
       labels:
         index: 'Labels'
+        new: 'Add a label'
   text:
+    controllers:
+      case_filters:
+        index: 'Case Filters'
+      labels:
+        create:
+          success: 'Your new label is ready to go!'
+        index: 'Labels'
+        new: 'New label'
     models:
       case:
         none: "There are no cases in this filter."
       case_filter:
-        heading: 'Case Filters'
         none: "You don't have any case filters available right now."
       label:
-        heading: 'Labels'
         none: "There are no labels in your Desk.com account."

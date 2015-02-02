@@ -25,4 +25,13 @@ RSpec.describe LabelMaker::Label do
       expect(filter.color).to eq('default')
     end
   end
+
+  it 'creates with a name' do
+    VCR.use_cassette('create label with a name') do
+      label = LabelMaker::Label.create(name: 'Cool Label')
+
+      expect(label['id']).not_to be_nil
+      expect(label['name']).to eq('Cool Label')
+    end
+  end
 end

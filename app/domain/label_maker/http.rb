@@ -4,5 +4,10 @@ module LabelMaker
       resp = DeskApi.get("#{DeskApiRoot}#{endpoint}")
       JSON.parse(resp.body)
     end
+
+    def self.post(endpoint, body = {})
+      resp = DeskApi.post("#{DeskApiRoot}#{endpoint}", body.to_json)
+      JSON.parse(resp.body)
+    end
   end
 end

@@ -23,6 +23,15 @@
     </header>
 
     <section class='row'>
+      <% flash.each do |type, msg| %>
+        <div class='columns large-12'>
+          <div data-alert class='alert-box <%= type %> radius'>
+            <%= msg %>
+            <a href='#' class='close'>&times;</a>
+          </div>
+        </div>
+      <% end %>
+
       <%= yield %>
     </section>
   </body>

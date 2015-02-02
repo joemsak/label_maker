@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://joesak.desk.com/api/v2/labels
+    body:
+      encoding: UTF-8
+      string: '{"name":"Cool"}'
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      content-length:
+      - '15'
+      authorization:
+      - OAuth oauth_body_hash="FoKw3yMBPbC7LuxD6o0CyKWsLio%3D", oauth_consumer_key="1ILS6AktlB2RM1FyvEgw",
+        oauth_nonce="WL3WS2d7w1UQm7FLQfZsIoO0laQoehE1WCZGRmhQ", oauth_signature="B2%2Fc%2FgUs2ZuEkByZ8BgB6%2FH7uGk%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1422919311", oauth_token="KDv8P7iJ7nyGCud1rihM",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Feb 2015 23:21:51 GMT
+      etag:
+      - '"14229193118994852"'
+      location:
+      - https://joesak.desk.com/api/v2/labels/2367522
+      server:
+      - nginx
+      status:
+      - 201 Created
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rack-cache:
+      - invalidate, pass
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '59'
+      x-rate-limit-reset:
+      - '9'
+      x-request-id:
+      - 3cb893b478a6605671543358a06fd680
+      x-runtime:
+      - '0.083836'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      content-length:
+      - '173'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"id":2367522,"name":"Cool","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367522","class":"label"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 02 Feb 2015 23:21:51 GMT
+recorded_with: VCR 2.9.3
