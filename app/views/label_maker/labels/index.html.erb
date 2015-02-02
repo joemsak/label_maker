@@ -1,7 +1,9 @@
 <div class="columns large-12">
-  <h3><%= t('text.models.label.heading') %></h3>
+  <h3><%= t('text.controllers.labels.index') %></h3>
   <% if @labels.any? %>
-    <%= render @labels %>
+    <div class='clearfix'>
+      <%= render @labels %>
+    </div>
   <% else %>
     <p><%= t('text.models.label.none') %></p>
   <% end %>
