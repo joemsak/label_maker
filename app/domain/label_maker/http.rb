@@ -10,7 +10,7 @@ module LabelMaker
       JSON.parse(resp.body)
     end
 
-    def self.put(endpoint, body = {})
+    def self.put(endpoint, body)
       resp = DeskApi.put("#{DeskApiRoot}#{endpoint}", body.to_json)
       JSON.parse(resp.body)
     end

@@ -23,7 +23,7 @@ module LabelMaker
     end
 
     def self.update(id, body)
-      Http.put("#{list_endpoint}/#{id}", body.to_json)
+      Http.put("#{list_endpoint}/#{id}", body)
     end
 
     def to_param
