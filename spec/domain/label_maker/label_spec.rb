@@ -12,7 +12,7 @@ RSpec.describe LabelMaker::Label do
     VCR.use_cassette('invalid label id') do
       expect {
         described_class.find('invalidId')
-      }.to raise_error(LabelMaker::LabelNotFoundError)
+      }.to raise_error(LabelMaker::ResourceNotFoundError)
     end
   end
 
