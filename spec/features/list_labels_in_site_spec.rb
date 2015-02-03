@@ -12,7 +12,7 @@ RSpec.describe 'List labels in the site' do
   end
 
   scenario 'Some labels on the site' do
-    VCR.use_cassette('list  all labels', record: :all) do
+    VCR.use_cassette('list  all labels') do
       visit label_maker_labels_path
 
       @labels = LabelMaker::Label.all

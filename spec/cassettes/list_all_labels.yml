@@ -14,24 +14,24 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="sG3vcM9fUFSszq5XJ7h8zFzxoFS0rZg8k2Y8j8dbhlM",
-        oauth_signature="8HpJhb1w6jWi1720H9jJr%2FrGayw%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422924483", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="oj58icNr1Av4Ld3MYsPQRe3BsGlTV42aCxkJ6bbXefI",
+        oauth_signature="p3bgmPErSv%2BBpYSq3QvJp99E%2BpE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422924893", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
       message: OK
     headers:
+      accept-ranges:
+      - bytes
       cache-control:
       - must-revalidate, private, max-age=0
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 03 Feb 2015 00:48:03 GMT
+      - Tue, 03 Feb 2015 00:54:54 GMT
       etag:
-      - '"14229198721678030"'
-      server:
-      - nginx
+      - '"14229248390754622"'
       status:
       - 200 OK
       vary:
@@ -40,39 +40,38 @@ http_interactions:
       - '15.999'
       x-frame-options:
       - SAMEORIGIN
-      x-rack-cache:
-      - miss
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
       - '59'
       x-rate-limit-reset:
-      - '57'
+      - '6'
       x-request-id:
-      - 456bbed9030213953dc17789e3558ba6
-      x-runtime:
-      - '0.065755'
-      x-ua-compatible:
-      - IE=Edge,chrome=1
+      - 7dfcf903907f65aa380fcf57dd497d27
       content-length:
-      - '2877'
+      - '3789'
       connection:
       - Close
     body:
       encoding: UTF-8
-      string: '{"total_entries":14,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
+      string: '{"total_entries":19,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2367659,"name":"A
+        very nice label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367659","class":"label"}}},{"id":2177275,"name":"Abandoned
         Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2367541,"name":"Awesome
         Sauce","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367541","class":"label"}}},{"id":2367542,"name":"Check
         me out","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367542","class":"label"}}},{"id":2367522,"name":"Cool","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367522","class":"label"}}},{"id":2367525,"name":"Cool
         Label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367525","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2367540,"name":"Hello
-        World","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367540","class":"label"}}},{"id":2177270,"name":"More
-        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2367524,"name":"My
+        World","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367540","class":"label"}}},{"id":2367662,"name":"Label
+        Time","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367662","class":"label"}}},{"id":2177270,"name":"More
+        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2367657,"name":"My
+        cool new label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367657","class":"label"}}},{"id":2367524,"name":"My
         new label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367524","class":"label"}}},{"id":2177273,"name":"Negative
         Feedback","types":["case","macro"],"description":"Negative Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177273","class":"label"}}},{"id":2177272,"name":"Sample
         Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
-        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
+        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}},{"id":2367660,"name":"Test
+        Time","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367660","class":"label"}}},{"id":2367663,"name":"Tool
+        Time","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367663","class":"label"}}}]}}'
     http_version: '1.1'
-  recorded_at: Tue, 03 Feb 2015 00:48:03 GMT
+  recorded_at: Tue, 03 Feb 2015 00:54:54 GMT
 - request:
     method: get
     uri: https://joesak.desk.com/api/v2/labels
@@ -87,9 +86,9 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="eUU7X9t1odNFzCi9bNxzxe02xDAi8Zb7TPqqMKouNI",
-        oauth_signature="egCUrPzI5pHOZUMeXJMUZY2FlV0%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422924483", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="WnTNwfs6XHBTmGCNDUDNTw8LqPOKel7zi1jroTKnY",
+        oauth_signature="SjBPAwsSMlaO%2FVtd6Qa0SJ2BdM0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422924894", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -102,9 +101,9 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 03 Feb 2015 00:48:04 GMT
+      - Tue, 03 Feb 2015 00:54:55 GMT
       etag:
-      - '"14229198721678030"'
+      - '"14229248390754622"'
       status:
       - 200 OK
       vary:
@@ -118,26 +117,31 @@ http_interactions:
       x-rate-limit-remaining:
       - '58'
       x-rate-limit-reset:
-      - '56'
+      - '5'
       x-request-id:
-      - e658cd7197f7831cae2703aedd17f64e
+      - abc3d909af7b76d988b4899cc58e9aa4
       content-length:
-      - '2877'
+      - '3789'
       connection:
       - Close
     body:
       encoding: UTF-8
-      string: '{"total_entries":14,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
+      string: '{"total_entries":19,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2367659,"name":"A
+        very nice label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367659","class":"label"}}},{"id":2177275,"name":"Abandoned
         Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2367541,"name":"Awesome
         Sauce","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367541","class":"label"}}},{"id":2367542,"name":"Check
         me out","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367542","class":"label"}}},{"id":2367522,"name":"Cool","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367522","class":"label"}}},{"id":2367525,"name":"Cool
         Label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367525","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2367540,"name":"Hello
-        World","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367540","class":"label"}}},{"id":2177270,"name":"More
-        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2367524,"name":"My
+        World","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367540","class":"label"}}},{"id":2367662,"name":"Label
+        Time","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367662","class":"label"}}},{"id":2177270,"name":"More
+        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2367657,"name":"My
+        cool new label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367657","class":"label"}}},{"id":2367524,"name":"My
         new label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367524","class":"label"}}},{"id":2177273,"name":"Negative
         Feedback","types":["case","macro"],"description":"Negative Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177273","class":"label"}}},{"id":2177272,"name":"Sample
         Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
-        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
+        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}},{"id":2367660,"name":"Test
+        Time","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367660","class":"label"}}},{"id":2367663,"name":"Tool
+        Time","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367663","class":"label"}}}]}}'
     http_version: '1.1'
-  recorded_at: Tue, 03 Feb 2015 00:48:04 GMT
+  recorded_at: Tue, 03 Feb 2015 00:54:55 GMT
 recorded_with: VCR 2.9.3
