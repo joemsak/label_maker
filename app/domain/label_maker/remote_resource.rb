@@ -23,7 +23,7 @@ module LabelMaker
     end
 
     def self.update(id, body)
-      Http.put("#{list_endpoint}/#{id}", body)
+      Api::Desk.put("#{list_endpoint}/#{id}", body)
     end
 
     def to_param
@@ -32,7 +32,7 @@ module LabelMaker
 
     private
     def self.get_http(endpoint)
-      Http.get(endpoint)
+      Api::Desk.get(endpoint)
     end
 
     def self.persisted?(hashie_data)

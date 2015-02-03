@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'List labels in the site' do
   scenario 'No labels on the site' do
-    allow(LabelMaker::Http).to receive(:get) {
+    allow(LabelMaker::Api::Desk).to receive(:get) {
       { '_embedded' => { 'entries' => [] } }
     }
 
