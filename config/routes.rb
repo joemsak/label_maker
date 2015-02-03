@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'home', to: 'static_pages#home'
   root to: 'label_maker/case_filters#index'
 end
