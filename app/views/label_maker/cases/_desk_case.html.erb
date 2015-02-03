@@ -3,6 +3,13 @@
 
   <p><%= desk_case.blurb %>&hellip;</p>
 
+  <%= form_tag assign_label_maker_case_path(desk_case) do %>
+    <%= select_tag :label_id,
+                   options_from_collection_for_select(@labels, :id, :name),
+                   class: 'inline' %>
+    <%= submit_tag t('forms.buttons.assign'), class: 'button round tiny' %>
+  <% end %>
+
   <div class='clearfix'>
     <%= render desk_case.labels %>
   </div>

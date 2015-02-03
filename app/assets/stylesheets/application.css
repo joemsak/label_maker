@@ -14,3 +14,8 @@
   float: left;
   clear: left;
 }
+
+.inline {
+  display: inline-block;
+  width: auto;
+}

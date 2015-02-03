@@ -14,73 +14,9 @@ http_interactions:
       user-agent:
       - OAuth gem v0.4.7
       authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="jny7oqMX6vOa3CU9j6anP69cZZeoMZm3qn926QWcFTI",
-        oauth_signature="i8DMTOvPRS8D4nPE1V1vL6ezAfw%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422919501", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      accept-ranges:
-      - bytes
-      cache-control:
-      - must-revalidate, private, max-age=0
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Mon, 02 Feb 2015 23:25:02 GMT
-      etag:
-      - '"14229194914645114"'
-      status:
-      - 200 OK
-      vary:
-      - X-AppVersion
-      x-appversion:
-      - '15.999'
-      x-frame-options:
-      - SAMEORIGIN
-      x-rate-limit-limit:
-      - '60'
-      x-rate-limit-remaining:
-      - '59'
-      x-rate-limit-reset:
-      - '58'
-      x-request-id:
-      - 95e673826c2566efbfc502d4aa9e7d34
-      content-length:
-      - '2331'
-      connection:
-      - Close
-    body:
-      encoding: UTF-8
-      string: '{"total_entries":11,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
-        Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2367522,"name":"Cool","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367522","class":"label"}}},{"id":2367525,"name":"Cool
-        Label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367525","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2177270,"name":"More
-        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2367524,"name":"My
-        new label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367524","class":"label"}}},{"id":2177273,"name":"Negative
-        Feedback","types":["case","macro"],"description":"Negative Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177273","class":"label"}}},{"id":2177272,"name":"Sample
-        Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
-        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
-    http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 23:25:02 GMT
-- request:
-    method: get
-    uri: https://joesak.desk.com/api/v2/labels
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
-      - "*/*"
-      user-agent:
-      - OAuth gem v0.4.7
-      authorization:
-      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="XaDxgQAPeAX7EtmPmvS3XYAhz0TSmYyRAbeddaLo0U",
-        oauth_signature="BxvFoZgM7yjMnTYn%2FG95blrP6rg%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1422919502", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="sG3vcM9fUFSszq5XJ7h8zFzxoFS0rZg8k2Y8j8dbhlM",
+        oauth_signature="8HpJhb1w6jWi1720H9jJr%2FrGayw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422924483", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
   response:
     status:
       code: 200
@@ -91,9 +27,9 @@ http_interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 02 Feb 2015 23:25:03 GMT
+      - Tue, 03 Feb 2015 00:48:03 GMT
       etag:
-      - '"14229194914645114"'
+      - '"14229198721678030"'
       server:
       - nginx
       status:
@@ -109,29 +45,99 @@ http_interactions:
       x-rate-limit-limit:
       - '60'
       x-rate-limit-remaining:
-      - '58'
+      - '59'
       x-rate-limit-reset:
       - '57'
       x-request-id:
-      - bda6e43edf279da40d5d05cb36bd0d87
+      - 456bbed9030213953dc17789e3558ba6
       x-runtime:
-      - '0.095101'
+      - '0.065755'
       x-ua-compatible:
       - IE=Edge,chrome=1
-      transfer-encoding:
-      - chunked
+      content-length:
+      - '2877'
       connection:
       - Close
     body:
       encoding: UTF-8
-      string: '{"total_entries":11,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
-        Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2367522,"name":"Cool","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367522","class":"label"}}},{"id":2367525,"name":"Cool
-        Label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367525","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2177270,"name":"More
+      string: '{"total_entries":14,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
+        Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2367541,"name":"Awesome
+        Sauce","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367541","class":"label"}}},{"id":2367542,"name":"Check
+        me out","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367542","class":"label"}}},{"id":2367522,"name":"Cool","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367522","class":"label"}}},{"id":2367525,"name":"Cool
+        Label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367525","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2367540,"name":"Hello
+        World","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367540","class":"label"}}},{"id":2177270,"name":"More
         Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2367524,"name":"My
         new label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367524","class":"label"}}},{"id":2177273,"name":"Negative
         Feedback","types":["case","macro"],"description":"Negative Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177273","class":"label"}}},{"id":2177272,"name":"Sample
         Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
         Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
     http_version: '1.1'
-  recorded_at: Mon, 02 Feb 2015 23:25:03 GMT
+  recorded_at: Tue, 03 Feb 2015 00:48:03 GMT
+- request:
+    method: get
+    uri: https://joesak.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - OAuth gem v0.4.7
+      authorization:
+      - OAuth oauth_consumer_key="1ILS6AktlB2RM1FyvEgw", oauth_nonce="eUU7X9t1odNFzCi9bNxzxe02xDAi8Zb7TPqqMKouNI",
+        oauth_signature="egCUrPzI5pHOZUMeXJMUZY2FlV0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422924483", oauth_token="KDv8P7iJ7nyGCud1rihM", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      accept-ranges:
+      - bytes
+      cache-control:
+      - must-revalidate, private, max-age=0
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 03 Feb 2015 00:48:04 GMT
+      etag:
+      - '"14229198721678030"'
+      status:
+      - 200 OK
+      vary:
+      - X-AppVersion
+      x-appversion:
+      - '15.999'
+      x-frame-options:
+      - SAMEORIGIN
+      x-rate-limit-limit:
+      - '60'
+      x-rate-limit-remaining:
+      - '58'
+      x-rate-limit-reset:
+      - '56'
+      x-request-id:
+      - e658cd7197f7831cae2703aedd17f64e
+      content-length:
+      - '2877'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"total_entries":14,"page":1,"_links":{"self":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/labels?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"id":2177275,"name":"Abandoned
+        Chats","types":["case","macro"],"description":"Abandoned Chats","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177275","class":"label"}}},{"id":2367541,"name":"Awesome
+        Sauce","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367541","class":"label"}}},{"id":2367542,"name":"Check
+        me out","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367542","class":"label"}}},{"id":2367522,"name":"Cool","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367522","class":"label"}}},{"id":2367525,"name":"Cool
+        Label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367525","class":"label"}}},{"id":2177274,"name":"Escalated","types":["case","macro"],"description":"Escalated","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177274","class":"label"}}},{"id":2177271,"name":"Example","types":["case"],"description":"Example","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177271","class":"label"}}},{"id":2177269,"name":"Feedback","types":["case","macro"],"description":"Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177269","class":"label"}}},{"id":2367540,"name":"Hello
+        World","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367540","class":"label"}}},{"id":2177270,"name":"More
+        Info","types":["case","macro"],"description":"More Info","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177270","class":"label"}}},{"id":2367524,"name":"My
+        new label","types":["case","macro"],"description":null,"enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2367524","class":"label"}}},{"id":2177273,"name":"Negative
+        Feedback","types":["case","macro"],"description":"Negative Feedback","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177273","class":"label"}}},{"id":2177272,"name":"Sample
+        Case","types":["case"],"description":"Sample Case","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177272","class":"label"}}},{"id":2177268,"name":"Sample
+        Macros","types":["macro"],"description":"Sample Macros","enabled":true,"color":"default","_links":{"self":{"href":"/api/v2/labels/2177268","class":"label"}}}]}}'
+    http_version: '1.1'
+  recorded_at: Tue, 03 Feb 2015 00:48:04 GMT
 recorded_with: VCR 2.9.3

@@ -1,7 +1,10 @@
 <div class='columns large-12'>
   <h3><%= @case_filter.name %></h3>
   <% if @case_filter.cases.any? %>
-    <%= render partial: 'label_maker/cases/desk_case', collection: @case_filter.cases %>
+    <div class='cases'>
+      <%= render partial: 'label_maker/cases/desk_case',
+                 collection: @case_filter.cases %>
+    </div>
   <% else %>
     <p><%= t('text.models.case.none') %></p>
   <% end %>

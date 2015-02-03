@@ -11,4 +11,16 @@ RSpec.describe LabelMaker::Case do
       end
     end
   end
+
+  it 'assigns labels by id' do
+    VCR.use_cassette('assign a label to a case by id') do
+      desk_case = described_class.find(1)
+
+      desk_case.assign_label(2177275)
+
+      desk_case = described_class.find(1) # reload from api
+
+      expect(desk_case.label_ids).to include(2177275)
+    end
+  end
 end

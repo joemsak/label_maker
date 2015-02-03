@@ -5,5 +5,6 @@ class LabelMaker::CaseFiltersController < ApplicationController
 
   def show
     @case_filter = LabelMaker::CaseFilter.find(params[:id])
+    @labels = LabelMaker::Label.all
   end
 end

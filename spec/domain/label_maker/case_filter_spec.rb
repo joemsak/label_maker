@@ -12,7 +12,7 @@ RSpec.describe LabelMaker::CaseFilter do
     VCR.use_cassette('invalid case filter id') do
       expect {
         described_class.find('invalidId')
-      }.to raise_error(LabelMaker::CaseFilterNotFoundError)
+      }.to raise_error(LabelMaker::ResourceNotFoundError)
     end
   end
 

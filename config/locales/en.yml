@@ -1,6 +1,7 @@
 en:
   forms:
     buttons:
+      assign: 'Assign'
       submit: 'Save'
   links:
     controllers:
