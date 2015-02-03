@@ -6,9 +6,9 @@ The hosted site uses my Desk.com API information
 
 # Installation
 
-The local app will ask for your Desk.com API information
+The local app requires my oauth credentials in a `.env` file
 
-Make sure you have your Desk.com subdomain, oauth access keys, and  tokens ready
+Be sure to get the .env contents from the URL provided in the E-mail
 
 ```
 git clone git@github.com:joemsak/label_maker.git
