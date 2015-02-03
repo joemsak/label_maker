@@ -5,11 +5,15 @@ module LabelMaker
     attr_accessor :id, :_links
 
     def self.all
-      map_remote(list_endpoint)
+      map_embedded_entries(list_endpoint)
+    end
+
+    def self.create(attrs = {})
+      Api::Desk.post(list_endpoint, attrs)
     end
 
     def self.find(id)
-      resource = get_http("#{list_endpoint}/#{id}")
+      resource = get("#{list_endpoint}/#{id}")
       if persisted?(resource)
         new(resource)
       else
@@ -17,9 +21,8 @@ module LabelMaker
       end
     end
 
-    def self.map_remote(endpoint)
-      resp = get_http(endpoint)
-      resp['_embedded']['entries'].map { |d| new(d) }
+    def self.get(endpoint)
+      Api::Desk.get(endpoint)
     end
 
     def self.update(id, body)
@@ -31,8 +34,9 @@ module LabelMaker
     end
 
     private
-    def self.get_http(endpoint)
-      Api::Desk.get(endpoint)
+    def self.map_embedded_entries(endpoint)
+      resp = get(endpoint)
+      resp['_embedded']['entries'].map { |d| new(d) }
     end
 
     def self.persisted?(hashie_data)

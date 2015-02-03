@@ -8,7 +8,7 @@ module LabelMaker
     end
 
     def _links=(links)
-      self.cases = Case.build(id)
+      self.cases = Case.in_filter(id)
     end
   end
 end

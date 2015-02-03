@@ -9,8 +9,8 @@ module LabelMaker
       '/cases'
     end
 
-    def self.build(filter_id)
-      map_remote("/filters/#{filter_id}#{list_endpoint}")
+    def self.in_filter(filter_id)
+      map_embedded_entries("/filters/#{filter_id}#{list_endpoint}")
     end
 
     def assign_label(label_id)
